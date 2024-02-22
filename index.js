@@ -86,12 +86,13 @@ function appendItemToEndorsementListEl(item) {
     remove(exactLocationOfItemInDB);
   });
 
+  // append child elements to li
   newLiEl.append(newFromEl, newPEl, newToEl);
-
+  // append li to ul
   endorsementListEl.append(newLiEl);
 }
 
-//CLear functions
+// CLear functions
 
 function clearInputFieldEl() {
   inputFieldEl.value = "";
