@@ -27,6 +27,7 @@ const database = getDatabase(app);
 const endorsementsListInDB = ref(database, "endorsementsList");
 
 //APP
+// SetUp elements variables
 const inputFieldEl = document.getElementById("input-field");
 const publishBtnEl = document.getElementById("publish-btn");
 const endorsementListEl = document.getElementById("endorsement-list");
