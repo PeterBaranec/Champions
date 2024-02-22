@@ -80,7 +80,7 @@ function appendItemToEndorsementListEl(item) {
   newLiEl.addEventListener("dblclick", function () {
     //get exact location of item in database via ID
     let exactLocationOfItemInDB = ref(database, `endorsementsList/${itemID}`);
-    //remove item from database
+    //remove item from database via ID
     remove(exactLocationOfItemInDB);
   });
 
