@@ -43,6 +43,8 @@ publishBtnEl.addEventListener("click", function () {
   push(endorsementsListInDB, newPublish);
 
   clearInputFieldEl();
+  clearInputFieldFrom();
+  clearInputFieldTo();
 });
 
 onValue(endorsementsListInDB, function (snapshot) {
@@ -97,4 +99,12 @@ function clearInputFieldEl() {
 
 function clearEndorsementListEl() {
   endorsementListEl.innerHTML = "";
+}
+
+function clearInputFieldFrom() {
+  inputFieldFromPerson.value = "";
+}
+
+function clearInputFieldTo() {
+  inputFieldToPerosn.value = "";
 }
